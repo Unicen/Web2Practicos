@@ -1,10 +1,10 @@
-{include file="header.tpl" title=foo}
+{include file="header.tpl" }
 
 	<div class="container">
 
 		<h1>Noticias</h1>
 		<br/>
-		
+
 			<div class="blog-post">
 				<h2 class="blog-post-title">Delta Airlines suspende todos sus vuelos por una falla informática</h2>
 
@@ -21,7 +21,3 @@
 	</div>
 
 {include file="footer.tpl"}
-
-
-
-

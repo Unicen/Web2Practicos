@@ -1,9 +1,9 @@
-<?php 
+<?php
 	require('./libs/Smarty.class.php');
-		
+
 	$noticias = [
-		array("Titulo" => "Delta Airlines suspende todos sus vuelos por una falla informática", 
-			"Copete" => "La aerolínea estadounidense no brindó más información sobre las causas del apagón, que dejó varados a miles de pasajeros", 
+		array("Titulo" => "Delta Airlines suspende todos sus vuelos por una falla informática",
+			"Copete" => "La aerolínea estadounidense no brindó más información sobre las causas del apagón, que dejó varados a miles de pasajeros",
 			"Cuerpo" => 'LONDRES.- Los aviones de Delta Airlines se quedaron en tierra hoy tras experimentar problemas de sistemas no especificados por la aerolínea.
 
 Delta declinó realizar comentarios de inmediato por teléfono y no estaba claro si todos sus vuelos se vieron afectados.
@@ -12,20 +12,20 @@ Delta declinó realizar comentarios de inmediato por teléfono y no estaba claro
 La aerolínea explicó además que sus sistemas informáticos estaban caídos en todas partes y señaló: "Esperamos que no dure mucho tiempo".
 Varias aplicaciones se vieron afectadas, incluyendo el sitio web de la firma.'
 		),
-		array("Titulo" => "Millones de autos corren el riesgo de ser hackeados", 
-			"Copete" => 'Los sistemas de "decenas de millones de vehículos" están en riesgos de ser hackeados por su tipo de llaves y formas de acceso, según un informe que fue presentado por investigadores británicos en la conferencia sobre seguridad informática Usenix, que tuvo lugar en Texas, Estados Unidos.', 
+		array("Titulo" => "Millones de autos corren el riesgo de ser hackeados",
+			"Copete" => 'Los sistemas de "decenas de millones de vehículos" están en riesgos de ser hackeados por su tipo de llaves y formas de acceso, según un informe que fue presentado por investigadores británicos en la conferencia sobre seguridad informática Usenix, que tuvo lugar en Texas, Estados Unidos.',
 			"Cuerpo" => 'El estudio señala en particular que varios de los vehículos Volkswagen que fueron vendidos en los últimos 20 años son vulnerables y pueden ser hackeados con herramientas muy baratas.
 
-Los ataques funcionan por una suerte de "espionaje" que se produce en la señal enviada cuando el conductor presiona su llave para desbloquear el vehículo, y esto se puede hacer con equipamiento barato, indicaron los investigadores. 
+Los ataques funcionan por una suerte de "espionaje" que se produce en la señal enviada cuando el conductor presiona su llave para desbloquear el vehículo, y esto se puede hacer con equipamiento barato, indicaron los investigadores.
 
 Además, modelos de las marcas Audi, Seat y Skoda vendidos desde 1995 también pueden ser afectados ya que comparten el mismo sistema que Volkswagen, según informó el periódico británico The Guardian.
- 
+
 A esa lista se suman algunos modelos de Alfa Romeo, Citroen, Fiat, Ford, Mitsubishi, Nissan, Opel, y Peugeot, señala el reporte.
 Los tres investigadores de la Universidad de Birminghan, Inglaterra, y un cuarto que integra la compañía de seguridad Kasper and Oswald GmbH, en Alemania, también encontraron vulnerabillidades en modelos recientes, como el Audi Q3.
 Asimismo, aclararon que se enfocaron en los modelos más vendidos y no analizaron en detalle los modelos de lujo como Porsche, Bentley, Lamborghini y Bugatti.'
 		),
-		array("Titulo" => "En el sector TIC la demanda de empleados supera a la oferta", 
-			"Copete" => 'En 2015 hubo una demanda insatisfecha de 4.000 puestos laborales en empresas del sector Tecnología Informática y Comunicaciones o usuarias de tecnología. La capacitación específica, intensiva y breve es la apuesta para acortar esa brecha.', 
+		array("Titulo" => "En el sector TIC la demanda de empleados supera a la oferta",
+			"Copete" => 'En 2015 hubo una demanda insatisfecha de 4.000 puestos laborales en empresas del sector Tecnología Informática y Comunicaciones o usuarias de tecnología. La capacitación específica, intensiva y breve es la apuesta para acortar esa brecha.',
 			"Cuerpo" => 'Cerca de 400.000 personas trabajaban en el sector de Tecnología Informática y Comunicaciones (TIC) en 2015. Esta cifra representa el 2% de la población económicamente activa (PEA), que equivale a algo más de 19 millones de personas. Se trata de un rubro en el cual la escasez de recursos humanos calificados genera una limitación para el crecimiento de las organizaciones, que tienen dificultades para cubrir las posiciones que se generan por la creciente demanda: el año pasado esa brecha entre oferta y demanda llegó a 4.000 puestos.
 El problema de la escasez de recursos humanos en tecnología es global. Hay una reconversión de las empresas en esa dirección que genera roles que antes no existían y que requieren habilidades tecnológicas. Esto es transversal a todas las industrias e impacta en toda la economía, no solo en el sector.
 Para relevar las características del mercado laboral de las TIC en la Argentina, la ONG ComunidadIT realizó –con el apoyo de Cablevisión-Fibertel– una investigación que se propone como una herramienta para orientar la oferta de programas educativos y capacitaciones especializadas. A partir de comprender qué perfiles son los más requeridos y cuál es la demanda insatisfecha, el objetivo es identificar qué herramientas proveerles a los jóvenes con el fin de que puedan acceder a la formación requerida y mejorar sus condiciones de empleabilidad.
@@ -51,7 +51,6 @@ Como se trata de tender puentes entre el mundo de la educación y el mundo del t
 	];
 
 	$smarty = new Smarty;
-	$smarty->assign('titulo',$title);
 	$smarty->assign('noticias',$noticias);
 	$smarty->display('noticias.tpl');
 ?>

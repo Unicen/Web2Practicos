@@ -1,22 +1,22 @@
-{include file="header.tpl" title=foo}
+{include file="header.tpl" }
 
 	<div class="container">
 
 		<h1>Datos personales</h1>
 		<br/>
-		
+
 		<form>
 			<div class="form-group">
 			<label for="Nombre">Nombre</label>
 			<input type="text" class="form-control" id="Nombre" aria-describedby="NombreHelp" placeholder="José">
 			</div>
-			
+
 			<div class="form-group">
 			<label for="Apellido">Apellido</label>
 			<input type="text" class="form-control" id="Apellido" aria-describedby="ApellidoHelp" placeholder="Gonzalez">
 			</div>
-			
-		
+
+
 			<div class="form-group">
 				<label for="example-date-input" class="col-xs-2 col-form-label">Fecha de nacimiento</label>
 				<div class="col-xs-10">
@@ -42,13 +42,9 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</div>
-	
-	
+
+
 
 {include file="footer.tpl"}
-
-
-
-
