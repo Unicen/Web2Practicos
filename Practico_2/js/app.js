@@ -1,12 +1,22 @@
-function loadComments(){
-  /*$.ajax({
-    url: 'dibujarComentario.php',
-    success: renderComments
-  });*/
+$(document).ready(function(){
+  setHandlers();
+});
+
+function setHandlers(){
+  $("#comment-form").submit(saveComment);
 }
 
-function renderComments($body){
-  $("#comments").html($body);
+/* Operaciones ejercicio 3 */
+function saveComment(e){
+  e.preventDefault();
+  $.ajax({
+    url: 'comentarios.php',
+    method: 'POST',
+    data: $(this).serialize(),
+    success: renderComment
+  });
 }
 
-$(document).ready(loadComments);
+function renderComment(body){
+  $(body).hide().prependTo("#comments").fadeIn("slow");  
+}
