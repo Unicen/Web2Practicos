@@ -22,11 +22,11 @@
 			if(!isset($_SESSION["alumnos"]))
 			{
 				$_SESSION["alumnos"] = [
-					array("Nombre" => "Nico", "Materias" => array(
+					array("id" => 1, "Nombre" => "Nico", "Materias" => array(
 						$materias[0],
 						$materias[1]
 					)),
-					array("Nombre" => "Juan", "Materias" => array(
+					array("id" => 2, "Nombre" => "Juan", "Materias" => array(
 						$materias[1]
 					))
 				];

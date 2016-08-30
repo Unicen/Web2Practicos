@@ -1,7 +1,7 @@
 <?php
 
-require("model/alumnoModel.php");
-require("view/alumnoView.php");
+require_once("model/alumnoModel.php");
+require_once("view/alumnoView.php");
 
 class AlumnoController {
 

@@ -3,7 +3,7 @@
 	<div class="container">
 
 
-	<h1>{$materia["Nombre"]} <small>Cuatrimestre {$materia["Cuatrimestre"]}</small></h1>
+	<h1>{$materia["Nombre"]} <small>Cuatrimestre {$materia["Cuatrimestre"]}</small><a href="index.php?action=asistencias&materia={$materia["id"]}" class='btn btn-primary pull-right'>Cargar Asistencias</a></h1>
 
 
 	{if isset($alumnos)}
